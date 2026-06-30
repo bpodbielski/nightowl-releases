@@ -13,7 +13,7 @@ The app source lives in a separate private repository.
 
 ## Download
 
-**[⬇︎ Night Owl 1.0](https://bpodbielski.github.io/nightowl-releases/NightOwl-1.0.zip)** — macOS 14 (Sonoma) or later.
+**[⬇︎ Night Owl 1.1](https://bpodbielski.github.io/nightowl-releases/NightOwl-1.1.zip)** — macOS 14 (Sonoma) or later.
 
 Unzip and drag **Night Owl.app** to your Applications folder. The build is signed
 with a Developer ID and notarized by Apple, so it opens without a Gatekeeper
@@ -48,6 +48,14 @@ reinstalling, no re-downloading.
 ---
 
 ## Changelog
+
+### 1.1
+- Workstation reclaims disk space: after a night's verified keepers are archived to
+  your external drive, the local working copies are removed automatically.
+- Process from your archive: on the Workstation, the Process tab works from archived
+  target folders, with integration hours read from the folder itself.
+- Settings tailored to each node: options that don't apply to the selected node type
+  are now hidden.
 
 ### 1.0
 First release with built-in automatic updates.

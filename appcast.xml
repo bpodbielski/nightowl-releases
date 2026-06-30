@@ -6,6 +6,25 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.1</title>
+      <pubDate>Tue, 30 Jun 2026 19:25:47 +0000</pubDate>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.1</h3>
+        <ul>
+          <li><b>Reclaims disk space on the Workstation</b> — after a night's verified keepers are archived to your external drive, the local working copies are removed automatically, so the processing folder no longer grows without bound.</li>
+          <li><b>Process from your archive</b> — on the Workstation, the Process tab now works from archived target folders (Add Target Folder…), with integration hours read from the folder itself rather than imported sessions whose files have been reclaimed.</li>
+          <li><b>Settings tailored to each node</b> — the Settings panel now hides options that don't apply to the selected node type.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.1.zip"
+                 length="10654220"
+                 type="application/octet-stream"
+                 sparkle:edSignature="eGe+LFit5zSdPNado6q5YrPrCbEn1YRD2VA1jiEynt60jEUCZ2kR1k/IGwmSgeJy+mEu/KD3bwweDnnH3uiYDQ==" />
+    </item>
+    <item>
       <title>Version 1.0</title>
       <pubDate>Tue, 30 Jun 2026 18:05:36 +0000</pubDate>
       <sparkle:version>1</sparkle:version>
