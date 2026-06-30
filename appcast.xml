@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Night Owl</title>
+    <link>https://bpodbielski.github.io/nightowl-releases/appcast.xml</link>
+    <description>Automatic update feed for Night Owl.</description>
+    <language>en</language>
+    <item>
+      <title>Version 1.0</title>
+      <pubDate>Tue, 30 Jun 2026 18:05:36 +0000</pubDate>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.0</h3>
+        <p>First release distributed with built-in automatic updates.</p>
+        <ul>
+          <li>In-app updates: Night Owl now checks for new versions and updates itself.</li>
+          <li>Accurate capture hours: integration time is reconciled per observation night, so a target's total reflects every night it was imaged.</li>
+          <li>Sky map, plate-solve pointing checks, and mosaic planning.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.0.zip"
+                 length="10597972"
+                 type="application/octet-stream"
+                 sparkle:edSignature="7RWER/t4Z94GfV+Ch+XRGcnveEAiMAF821sITeOuW5EyMTXaKfb2mPgywRAxUDr8OD5Y6EnLjpdKjUwk9icsBw==" />
+    </item>
+  </channel>
+</rss>
