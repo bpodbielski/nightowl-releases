@@ -6,6 +6,25 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.2</title>
+      <pubDate>Thu, 02 Jul 2026 02:39:31 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.2</h3>
+        <ul>
+          <li><b>Remove a target folder from Process</b> — right-click a target in the Process list and choose “Remove Target Folder…” to drop it (with confirmation). Your archived files on disk are never touched.</li>
+          <li><b>Clearer processing errors</b> — when a Siril step fails, the Process tab now shows the actual error inline (with a “Reveal log in Finder” button) and writes a full per-step log, instead of a bare red ✗.</li>
+          <li><b>Smoother Conditions tab</b> — the radar &amp; satellite maps no longer re-load their tiles on every update, so scrolling to that row is no longer laggy.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.2.zip"
+                 length="10869121"
+                 type="application/octet-stream"
+                 sparkle:edSignature="VVEfPL3ZpmYQbQ2d8sQe++xI1DX28p7rUiPC+RjE1DFMLA/bSVuZXQD5h3xLQX5XbpQF79dc1SffYy+/QVCPCg==" />
+    </item>
+    <item>
       <title>Version 1.1 (build 3)</title>
       <pubDate>Wed, 01 Jul 2026 15:29:06 +0000</pubDate>
       <sparkle:version>3</sparkle:version>
