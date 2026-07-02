@@ -6,6 +6,27 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.3</title>
+      <pubDate>Thu, 02 Jul 2026 22:36:44 +0000</pubDate>
+      <sparkle:version>6</sparkle:version>
+      <sparkle:shortVersionString>1.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.3</h3>
+        <ul>
+          <li><b>Reimagined Targets tab</b> — a sky workspace with three views you switch between: <b>Tonight</b> (an altitude-vs-time chart of your targets with twilight and Moon), <b>Sky radar</b> (where each target sits in the sky right now), and <b>Atlas</b> (the photographic star map). A target list on the right stays in sync across all three.</li>
+          <li><b>Cleaner sky map</b> — the Atlas view drops the old web-style controls for native ones, including zoom in/out.</li>
+          <li><b>Two devices at once</b> — pair both your iPhone and iPad; each is now tracked independently, so they no longer interfere when sending commands. Manage and revoke paired devices in Settings ▸ Companion.</li>
+          <li><b>Session pipeline on your phone &amp; iPad</b> — staged sessions now show their progress from Queued to Archived. Choose how long to keep archived records in Settings ▸ Cloud.</li>
+          <li><b>Fixes</b> — remove a target folder from the Process tab; clearer errors when a processing step fails; smoother scrolling on the Conditions tab; captures logged under an alias now credit the right target.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.3.zip"
+                 length="11056802"
+                 type="application/octet-stream"
+                 sparkle:edSignature="23ug5KO9CQEFG/zbjl0Ct0fHaKY5E3u6z3eSPnHMNAOIMO6qmER9Ejm0Jk7tfUv0Cp7pzG5LK5IdffbWIRKaDA==" />
+    </item>
+    <item>
       <title>Version 1.2</title>
       <pubDate>Thu, 02 Jul 2026 02:39:31 +0000</pubDate>
       <sparkle:version>4</sparkle:version>
