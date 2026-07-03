@@ -6,6 +6,25 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.4</title>
+      <pubDate>Fri, 03 Jul 2026 13:43:06 +0000</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>1.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.4</h3>
+        <ul>
+          <li><b>Pipeline tab on the Workstation</b> — a new rail tab that shows your staged capture nights moving from <b>Queued</b> to <b>Archived</b>, with counts, how much is still waiting to transfer, and how long the oldest upload has been queued. It reads the same records your iPhone and iPad do, including nights already archived and cleared off the Drive.</li>
+          <li><b>Capture status in the Tracker</b> — each night in a target's breakdown now carries a Queued or Archived tag, so you can see a night's pipeline state without leaving the target.</li>
+          <li><b>More accurate cross-machine crediting</b> — hardened how a capture night is keyed so the Observatory and Workstation always agree on which night a session belongs to, keeping per-night integration totals correct across both Macs.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.4.zip"
+                 length="11116643"
+                 type="application/octet-stream"
+                 sparkle:edSignature="Vwva+RUc/Q/cpRM1et7cguQyeJac9oWnM8N/QAaNgZqqJlee5YsvEKkAmPxsF2R52ICihcg08aCRRd4Jt9c2Bg==" />
+    </item>
+    <item>
       <title>Version 1.3</title>
       <pubDate>Thu, 02 Jul 2026 22:36:44 +0000</pubDate>
       <sparkle:version>6</sparkle:version>
