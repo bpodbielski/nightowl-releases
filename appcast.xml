@@ -6,6 +6,27 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.5</title>
+      <pubDate>Sat, 04 Jul 2026 18:08:26 +0000</pubDate>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>1.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.5</h3>
+        <p>Power-loss resilience — for when the scope loses power overnight.</p>
+        <ul>
+          <li><b>Battery safety cutoff</b> — if the Seestar drops to a set charge while off wall power, Night Owl automatically stops the plan and parks the scope to protect it, then holds until it's back on power. Set the floor in Settings ▸ Observatory ▸ Battery safety cutoff (default 10%).</li>
+          <li><b>Shore-power alert</b> — you're notified the moment the scope switches from wall power to battery, giving hours of warning before it runs low.</li>
+          <li><b>Capture recovery</b> — captures left on the scope when it lost power are pulled automatically once it's back online (and there's a “Pull captures from Seestar now” button to do it on demand).</li>
+          <li><b>Companion updates</b> — the phone now receives power-lost, battery-stop, and recovery alerts, shows whether the scope is on wall power, and can park the scope, pull captures, or adjust the battery floor remotely.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.5.zip"
+                 length="11148990"
+                 type="application/octet-stream"
+                 sparkle:edSignature="6syuAwVXrazKbxZRKZ75HEFY9RBHC3ZCQWNA/l25r+/3ZB1yk86je8NS+aRq1UNGO4SMnkSIkJ7RJU+O2NbTCA==" />
+    </item>
+    <item>
       <title>Version 1.4</title>
       <pubDate>Fri, 03 Jul 2026 13:43:06 +0000</pubDate>
       <sparkle:version>7</sparkle:version>
