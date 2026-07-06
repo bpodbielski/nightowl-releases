@@ -6,6 +6,24 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.5 (build 9)</title>
+      <pubDate>Mon, 06 Jul 2026 23:25:03 +0000</pubDate>
+      <sparkle:version>9</sparkle:version>
+      <sparkle:shortVersionString>1.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.5 (build 9)</h3>
+        <ul>
+          <li><b>“Cull” is now “Sessions”</b> — and it's available on the Observatory too, so you can see each night's captures on the machine that records them.</li>
+          <li><b>Unified Pipeline view</b> — one Pipeline tab on every node shows where each night's capture is on its way from the scope to the archive: <b>On Seestar → Uploading → On Drive → Archived</b>, with counts and progress. Captures still on the Seestar that haven't been uploaded to Google Drive are now clearly visible, and the upload status flows through so you can see it from the Workstation as well.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.5-9.zip"
+                 length="11209198"
+                 type="application/octet-stream"
+                 sparkle:edSignature="IoWkVs39UgqY7caWFqcz/w1pLFs1UAjbZ1T2TigOqxkXNc9Te5OnAse5kQiyYxwqrr8OGtcpzlnkKdHqzR5rDw==" />
+    </item>
+    <item>
       <title>Version 1.5</title>
       <pubDate>Sat, 04 Jul 2026 18:08:26 +0000</pubDate>
       <sparkle:version>8</sparkle:version>
