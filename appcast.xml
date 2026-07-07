@@ -6,6 +6,23 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.6 (build 12)</title>
+      <pubDate>Tue, 07 Jul 2026 17:34:41 +0000</pubDate>
+      <sparkle:version>12</sparkle:version>
+      <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.6 (build 12)</h3>
+        <ul>
+          <li><b>Archived nights leave “On Drive” on their own</b> — once the Workstation archives a night to the SSD, the pipeline now clears it from “On Drive” to “Archived” within a minute or two, without waiting for the observatory to capture again. Fixes counts that stayed stuck at “On Drive” for nights you’d already processed.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.6-12.zip"
+                 length="11325219"
+                 type="application/octet-stream"
+                 sparkle:edSignature="IqTqbCrE7HfRWClr7neuoJQIwFz7Xy4hzbGtrJbe+TyfQrPzAaI+rZsP7cLXJnKUC9Q4bZhwN4wu+jI9sxY2CQ==" />
+    </item>
+    <item>
       <title>Version 1.6</title>
       <pubDate>Tue, 07 Jul 2026 13:51:04 +0000</pubDate>
       <sparkle:version>11</sparkle:version>
