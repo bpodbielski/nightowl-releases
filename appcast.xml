@@ -6,6 +6,24 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.5 (build 10)</title>
+      <pubDate>Tue, 07 Jul 2026 02:31:31 +0000</pubDate>
+      <sparkle:version>10</sparkle:version>
+      <sparkle:shortVersionString>1.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.5 (build 10)</h3>
+        <ul>
+          <li><b>Pipeline in the sidebar</b> — the unified Pipeline tab introduced in build 9 is now actually reachable: it was missing from the sidebar. It appears on every node, under Sessions.</li>
+          <li><b>One pipeline, everywhere</b> — the observatory now publishes the complete session lifecycle (On Seestar → Uploading → On Drive → Archived) as a single shared view, so the Workstation — and soon the iPhone/iPad app — show exactly the same list, including session sizes.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.5-10.zip"
+                 length="11206559"
+                 type="application/octet-stream"
+                 sparkle:edSignature="W10ps90CZVlvEfxptwdboKE5BoZEWhhoXP7kBD2hjuZKJFDkchnheTlWg2s+dTLIbwjWgbrrXBI4bRC/uplBCg==" />
+    </item>
+    <item>
       <title>Version 1.5 (build 9)</title>
       <pubDate>Mon, 06 Jul 2026 23:25:03 +0000</pubDate>
       <sparkle:version>9</sparkle:version>
