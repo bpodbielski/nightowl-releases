@@ -6,6 +6,26 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.6</title>
+      <pubDate>Tue, 07 Jul 2026 13:51:04 +0000</pubDate>
+      <sparkle:version>11</sparkle:version>
+      <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.6</h3>
+        <ul>
+          <li><b>Sessions and Pipeline are now one panel</b> — the Sessions list is grouped by where each capture is in its journey (On Seestar → Uploading → On Drive → Archived). Your own sessions stay fully editable; captures on the other machine appear as read-only status rows, so each Mac sees the whole pipeline. With nothing selected, the detail pane shows the pipeline overview.</li>
+          <li><b>Hour-by-hour forecast for the night</b> — the Tonight card now shows an hourly strip and a headline like “Usable imaging ≈ 1.5h · roof likely opens ~4:00am,” so a night that only clears at 4am reads very differently from one that’s open all night.</li>
+          <li><b>Smarter, honest predictions</b> — image-quality learning now comes only from your verified culls on the Workstation (not the automatic dawn pass), so the model tunes to what you actually keep. Your “fully labelled” count may drop as it switches to verified nights.</li>
+          <li><b>Stuck uploads self-heal</b> — a session left part-uploaded by a Drive hiccup is now retried automatically.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.6.zip"
+                 length="11324867"
+                 type="application/octet-stream"
+                 sparkle:edSignature="1YYetviwRmnc1npILnQGB27sGMfX/UWvBWmzitubICamvC6RkkMsA7AGegaf4CTC+AiAq/wYOq6pkEp6/4bpBg==" />
+    </item>
+    <item>
       <title>Version 1.5 (build 10)</title>
       <pubDate>Tue, 07 Jul 2026 02:31:31 +0000</pubDate>
       <sparkle:version>10</sparkle:version>
