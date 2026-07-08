@@ -6,6 +6,23 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.6 (build 13)</title>
+      <pubDate>Wed, 08 Jul 2026 20:02:51 +0000</pubDate>
+      <sparkle:version>13</sparkle:version>
+      <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.6 (build 13)</h3>
+        <ul>
+          <li><b>Cull results reach the Calibration card reliably</b> — after you verify a night on the Workstation, the observatory now picks up that keep-quality within about a minute and updates “Calibration,” instead of leaving the night stuck on “cull pending” until the app was relaunched.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.6-13.zip"
+                 length="11331545"
+                 type="application/octet-stream"
+                 sparkle:edSignature="OcBvMFTpklBKgNPmjeBsEKw31X6PnfyKrubq8NkkqcHSkkXuz2xyT/ibehV3Z1V+6mkFwIxY1EtN2aOjAy1tBg==" />
+    </item>
+    <item>
       <title>Version 1.6 (build 12)</title>
       <pubDate>Tue, 07 Jul 2026 17:34:41 +0000</pubDate>
       <sparkle:version>12</sparkle:version>
