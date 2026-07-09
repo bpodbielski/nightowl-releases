@@ -6,6 +6,23 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.7 (build 20)</title>
+      <pubDate>Thu, 09 Jul 2026 23:34:24 +0000</pubDate>
+      <sparkle:version>20</sparkle:version>
+      <sparkle:shortVersionString>1.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.7 (build 20)</h3>
+        <ul>
+          <li><b>Fixes target-catalog sync between your Macs.</b> A long-standing conflict in how catalog and progress records were stored meant that once a target had been imaged and verified, its catalog details (name, type, coordinates, goal) could never sync between machines — so the same object could look different on each Mac. Those details now converge correctly across all your Macs and devices. <i>Update every Mac to this build.</i></li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.7-20.zip"
+                 length="11521319"
+                 type="application/octet-stream"
+                 sparkle:edSignature="GlLNRwQmqjrAssKawbwrd60e/E7lN3R7/4Bll/ei37rep8Nf2O3dYgRwdrTyvG5d122k9Whpbsrwiwj16YYRCA==" />
+    </item>
+    <item>
       <title>Version 1.7 (build 19)</title>
       <pubDate>Thu, 09 Jul 2026 22:47:01 +0000</pubDate>
       <sparkle:version>19</sparkle:version>
