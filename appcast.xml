@@ -6,6 +6,23 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.6 (build 16)</title>
+      <pubDate>Thu, 09 Jul 2026 12:16:59 +0000</pubDate>
+      <sparkle:version>16</sparkle:version>
+      <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.6 (build 16)</h3>
+        <ul>
+          <li><b>Add, edit, and delete tracker targets from any machine.</b> The catalog is now shared and multi-writer — a target you add or edit on the Workstation (or the iPhone/iPad app) syncs to the Observatory and back, and deletes propagate everywhere. Edits use last-write-wins, and captured hours are preserved across edits.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.6-16.zip"
+                 length="11396292"
+                 type="application/octet-stream"
+                 sparkle:edSignature="cZhnfVIZCveL6T+TFN/+rsk6q1QCVBVNywOiBJy6bwnWO78M4dwJzlnqCrxoZSOo+KA95TkQ7vqdW7Pm1TYtDw==" />
+    </item>
+    <item>
       <title>Version 1.6 (build 15)</title>
       <pubDate>Thu, 09 Jul 2026 02:10:37 +0000</pubDate>
       <sparkle:version>15</sparkle:version>
