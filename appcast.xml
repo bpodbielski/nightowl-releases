@@ -6,6 +6,24 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.7 (build 19)</title>
+      <pubDate>Thu, 09 Jul 2026 22:47:01 +0000</pubDate>
+      <sparkle:version>19</sparkle:version>
+      <sparkle:shortVersionString>1.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.7 (build 19)</h3>
+        <ul>
+          <li><b>More reliable target-catalog sync across your machines.</b> A Mac that can&rsquo;t reach iCloud no longer republishes over the shared catalog, and an auto-created placeholder can never overwrite a target that&rsquo;s already matched to a real object &mdash; so your targets stay consistent on every Mac and device instead of a stub clobbering the good data. Ungrouping a mosaic, or removing a panel from one, now propagates everywhere too.</li>
+          <li><b>Mosaic tracking reads correctly.</b> Each panel and the project header now measure against the mosaic&rsquo;s per-panel goal (not each panel&rsquo;s own goal or the summed total), so a mosaic&rsquo;s progress and &ldquo;weakest panel&rdquo; completion line up.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.7.zip"
+                 length="11521269"
+                 type="application/octet-stream"
+                 sparkle:edSignature="6MrpQJ/IvU9JxIjZ8p7KUNL2TuAAOOVLkAaXrCbX8yI7vw5wqiOx3igy3iOY31PUKuIhvgoMhWhLPqSwliOiBg==" />
+    </item>
+    <item>
       <title>Version 1.6 (build 17)</title>
       <pubDate>Thu, 09 Jul 2026 16:02:34 +0000</pubDate>
       <sparkle:version>17</sparkle:version>
