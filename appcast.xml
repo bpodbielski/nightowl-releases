@@ -6,6 +6,24 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.6 (build 14)</title>
+      <pubDate>Thu, 09 Jul 2026 01:34:27 +0000</pubDate>
+      <sparkle:version>14</sparkle:version>
+      <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.6 (build 14)</h3>
+        <ul>
+          <li><b>Ideal time of year for every target</b> — the target detail popup now shows the best season to image each object from your site: a peak month, a "now" line, and a 12-month strip banded into prime and usable months, with a live in-season / shoulder / out-of-season badge and the current month marked. All computed from the target's coordinates — nothing to enter.</li>
+          <li><b>Roomier detail popup</b> — the target popup is now a two-column layout (reference image, description and capture history on the left; tonight's visibility and the season strip on the right), so it fits without scrolling.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.6-14.zip"
+                 length="11379958"
+                 type="application/octet-stream"
+                 sparkle:edSignature="bsTH2Ncqv+gXvK6rsYTguqyIvXMAR+0zmsEwts0IdBzcD85GwIyqRZtJtzj79PZZQQllIa/HKJ+9RWvWUB3EDg==" />
+    </item>
+    <item>
       <title>Version 1.6 (build 13)</title>
       <pubDate>Wed, 08 Jul 2026 20:02:51 +0000</pubDate>
       <sparkle:version>13</sparkle:version>
