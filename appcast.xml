@@ -6,6 +6,23 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.6 (build 15)</title>
+      <pubDate>Thu, 09 Jul 2026 02:10:37 +0000</pubDate>
+      <sparkle:version>15</sparkle:version>
+      <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.6 (build 15)</h3>
+        <ul>
+          <li><b>Fixes a crash when using the menu bar on macOS 26.</b> An informational item in the Review menu could crash the app while the menu was being built. If Night Owl was quitting unexpectedly around menu use, this resolves it.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.6-15.zip"
+                 length="11379924"
+                 type="application/octet-stream"
+                 sparkle:edSignature="TiQHBP2c7BOgmqI8JqrAPpFM14rkCGviSPOKb8+aaxBEHDgTCCYUOFH+EAJoiUuXgM6GTSIiCurMDKnl93uXBQ==" />
+    </item>
+    <item>
       <title>Version 1.6 (build 14)</title>
       <pubDate>Thu, 09 Jul 2026 01:34:27 +0000</pubDate>
       <sparkle:version>14</sparkle:version>
