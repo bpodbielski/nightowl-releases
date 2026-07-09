@@ -6,6 +6,23 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.6 (build 17)</title>
+      <pubDate>Thu, 09 Jul 2026 16:02:34 +0000</pubDate>
+      <sparkle:version>17</sparkle:version>
+      <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.6 (build 17)</h3>
+        <ul>
+          <li><b>Group a multi-panel mosaic into one tracked project.</b> A mosaic shot as several Seestar panels — each plate-solving to a different object — now folds into a single row in the Tracker with combined hours and a &ldquo;weakest panel&rdquo; progress bar (a mosaic counts as complete only when every panel reaches its goal). Group from the suggestion banner when Night Owl spots same-night neighboring panels, or select targets and choose &ldquo;Group as Mosaic&hellip;&rdquo; — and ungroup anytime. Grouped panels archive together under the project folder, and grouping syncs across your Macs.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.6-17.zip"
+                 length="11515935"
+                 type="application/octet-stream"
+                 sparkle:edSignature="3B4jwKXUjA5l2glZlUl0RXwqKKTn0VzNM/9BDJA4Cbw+ppPS4Y8Kzf6LELD4HZ05YT/gFnaxencSdjKK9W1LAQ==" />
+    </item>
+    <item>
       <title>Version 1.6 (build 16)</title>
       <pubDate>Thu, 09 Jul 2026 12:16:59 +0000</pubDate>
       <sparkle:version>16</sparkle:version>
