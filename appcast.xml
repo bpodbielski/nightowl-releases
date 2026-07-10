@@ -6,6 +6,25 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.7 (build 22)</title>
+      <pubDate>Fri, 10 Jul 2026 03:08:16 +0000</pubDate>
+      <sparkle:version>22</sparkle:version>
+      <sparkle:shortVersionString>1.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.7 (build 22)</h3>
+        <ul>
+          <li><b>Backup roof monitors so a missed message can&rsquo;t strand the roof.</b> Night Owl now reads your building&rsquo;s live roof status from two extra sources &mdash; Starfront&rsquo;s own status system and the StellarVision dashboard &mdash; alongside the Discord feed, and checks them every poll. If any live source shows the roof closed, closed always wins. This fixes the case where a missed Discord &ldquo;roofs opening/closing&rdquo; message left the roof reading wrong for the rest of the night. On by default; it uses your building number in Settings &#9656; Observatory (filled in automatically from your camera building id).</li>
+          <li><b>Your target catalog stays identical on every Mac and phone.</b> Placeholder targets created from imaged-but-uncatalogued objects are filled in once with real names and coordinates, and the catalog is now published from your observatory Mac and mirrored everywhere else &mdash; so every machine and your phone show exactly the same list, including mosaics.</li>
+          <li><b>Catalog editing works from the workstation Mac again.</b> Edits made away from the observatory (add, edit, delete, group/ungroup a mosaic) route through your observatory Mac and sync back to every device. <i>Update every Mac to this build.</i></li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.7-22.zip"
+                 length="11628804"
+                 type="application/octet-stream"
+                 sparkle:edSignature="jVs6n+sTHbyx1OEVnb7rqSwvc6fJyVwpJgIqYzhvMEqsyhsyAygFeUEOhQVpIy4ckTp21fq9c0liCA85Bmf+Aw==" />
+    </item>
+    <item>
       <title>Version 1.7 (build 20)</title>
       <pubDate>Thu, 09 Jul 2026 23:34:24 +0000</pubDate>
       <sparkle:version>20</sparkle:version>
