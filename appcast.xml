@@ -6,6 +6,27 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.8 (build 25)</title>
+      <pubDate>Fri, 10 Jul 2026 23:37:27 +0000</pubDate>
+      <sparkle:version>25</sparkle:version>
+      <sparkle:shortVersionString>1.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.8 (build 25)</h3>
+        <ul>
+          <li><b>The Sessions tab is now a session tracker.</b> Sessions are grouped by target under each stage (On Seestar &#8594; Uploading &#8594; On Drive &#8594; Archived), so you see one row per target instead of a long flat list. Select a target and the pane shows a table of its sessions &mdash; date, frames captured, frames auto-culled, frames you culled by hand, and final frames kept &mdash; unified across your Macs, so the whole history of a target reads at a glance. Mosaics group as one project row with a per-panel column.</li>
+          <li><b>Culling has its own panel again.</b> On the workstation and standalone Macs, the work of reviewing and culling moved to a dedicated <b>Cull</b> tab &mdash; a focused queue of just the sessions that need you &mdash; while Sessions stays a clean tracker. Pulling a staged night or starting a new session now takes you straight to the Cull queue.</li>
+          <li><b>See when catalog edits are still syncing.</b> The Tracker now shows a &ldquo;syncing&rdquo; indicator while an edit is on its way to your other Macs, a badge on each row that&rsquo;s still in flight, and a &ldquo;catalog synced &lt;time&gt; ago&rdquo; line so you know the list is current.</li>
+          <li><b>Stuck syncs no longer fail silently.</b> If a catalog edit can&rsquo;t reach your observatory Mac within a few minutes, Night Owl now raises a visible warning instead of quietly leaving your Macs out of sync.</li>
+          <li><b>Targets that lived on only one Mac now appear everywhere.</b> A target created away from the observatory (for example a mosaic you grouped on the workstation) is pushed across, and display names and capitalization converge &mdash; fixing the case where a target could be missing, or spelled differently, on the other Mac. <i>Update every Mac to this build.</i></li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.8.zip"
+                 length="11850582"
+                 type="application/octet-stream"
+                 sparkle:edSignature="TKKZZU8+cM6ws9L0Zms9PqzN4/jYeSzWVHVnfYAiLThh0pYTj6Yp2ZcojDJpVbuOtx/WJ+ZvpRJHdZ+QYE0NBQ==" />
+    </item>
+    <item>
       <title>Version 1.7 (build 22)</title>
       <pubDate>Fri, 10 Jul 2026 03:08:16 +0000</pubDate>
       <sparkle:version>22</sparkle:version>
