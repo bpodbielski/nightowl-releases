@@ -6,6 +6,23 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.8 (build 27)</title>
+      <pubDate>Sat, 11 Jul 2026 01:29:30 +0000</pubDate>
+      <sparkle:version>27</sparkle:version>
+      <sparkle:shortVersionString>1.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.8 (build 27)</h3>
+        <ul>
+          <li><b>Finishes the cross-Mac Sessions tracker fix from build 26.</b> Sessions captured before your target catalog settled (renames, auto-added targets, mosaic grouping) could still show twice on the observatory Mac &mdash; once under On Drive and again under Archived. Matching now tolerates a target having been renamed since the night was staged, so those sessions pair up with their archived records and each night appears exactly once, the same on both Macs.</li>
+          <li><b>Older sessions recover their &ldquo;captured&rdquo; and &ldquo;auto-culled&rdquo; counts.</b> The same renaming issue kept early nights from ever publishing their pre-cull numbers &mdash; their table columns stayed &ldquo;&mdash;&rdquo;. After the observatory Mac's next background scan, those counts fill in across all your devices. Truly unknowable history stays &ldquo;&mdash;&rdquo; rather than guessing.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.8-27.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="3SSs+vIURAibMoafOk2yV4ssOPbBsc9t7J3igHtUFd4CAsyQE5ANM9bpm2lYcEaG/KinuhUqOu5Z27fU+oKmAg==" length="11879273" />
+    </item>
+    <item>
       <title>Version 1.8 (build 26)</title>
       <pubDate>Sat, 11 Jul 2026 01:05:34 +0000</pubDate>
       <sparkle:version>26</sparkle:version>
