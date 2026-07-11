@@ -6,6 +6,24 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.8 (build 26)</title>
+      <pubDate>Sat, 11 Jul 2026 01:05:34 +0000</pubDate>
+      <sparkle:version>26</sparkle:version>
+      <sparkle:shortVersionString>1.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.8 (build 26)</h3>
+        <ul>
+          <li><b>The Sessions tracker now shows the same thing on every Mac.</b> Build 25's tracker could disagree between the observatory and workstation Macs &mdash; the same target listed under two stages at once, counts that didn't match, and names cased differently (&ldquo;M81&rdquo; vs &ldquo;m81&rdquo;). Sessions are now matched across your Macs by identity rather than by name and date, a session your workstation has consumed files under Archived on both machines, and every target renders one name everywhere. Only work actively in flight (capturing, uploading, mid-cull) still reads per-machine, as it should.</li>
+          <li>The count chip next to each target now always equals the rows you see in its session table.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.8-26.zip"
+                 length="11868041"
+                 type="application/octet-stream"
+                 sparkle:edSignature="0E7rWVQMIEpPzFsgdbHd7vYb73XK9fIuoNaqMcwwEN47ZKfb61QHI46jq55AusTm1hw/BNhtv25XoOWUqsOiAw==" />
+    </item>
+    <item>
       <title>Version 1.8 (build 25)</title>
       <pubDate>Fri, 10 Jul 2026 23:37:27 +0000</pubDate>
       <sparkle:version>25</sparkle:version>
