@@ -6,6 +6,25 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.8 (build 28)</title>
+      <pubDate>Sun, 12 Jul 2026 01:01:44 +0000</pubDate>
+      <sparkle:version>28</sparkle:version>
+      <sparkle:shortVersionString>1.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.8 (build 28)</h3>
+        <ul>
+          <li><b>Your full capture history now appears on every device.</b> Sessions that were staged and archived before cross-device syncing existed (roughly, nights before early July) had no record for other Macs to show &mdash; the observatory Mac now reconstructs them on launch, so both Macs (and the phone) list the complete history with each night's captured and auto-culled counts.</li>
+          <li><b>Older archived nights recover their numbers.</b> Records that were missing their &ldquo;captured&rdquo; and &ldquo;auto-culled&rdquo; counts &mdash; showing &ldquo;&mdash;&rdquo; in the session table &mdash; are filled in from the observatory Mac's own frame records, even when the original staging folder is long gone. Counts that are truly unknowable stay &ldquo;&mdash;&rdquo; rather than guessing.</li>
+          <li><b>The last duplicate rows disappear.</b> A session whose identity drifted (for example after a target was renamed) no longer shows once as itself and again as its archived record &mdash; when its history is fully represented on the wire, the tracker shows just that, identically on both Macs. Two real sessions from the same night are always kept distinct.</li>
+          <li>Night Owl now keeps a detailed diagnostic log of every session-matching decision (Console &#8594; subsystem <code>com.benpodbielski.NightOwl.sync</code>, category <code>TrackerConvergence</code>), so any remaining cross-device discrepancy can be pinpointed exactly.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.8-28.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="4pBgDnbA5B6aDfvUN/oEEXHBknLtJVh9ezahTOYfcC4GuNiopFFsbIFc/+MrZIdK6VFpc/CC5c35URsfx2/VCA==" length="11939483" />
+    </item>
+    <item>
       <title>Version 1.8 (build 27)</title>
       <pubDate>Sat, 11 Jul 2026 01:29:30 +0000</pubDate>
       <sparkle:version>27</sparkle:version>
