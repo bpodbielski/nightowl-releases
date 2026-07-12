@@ -6,6 +6,25 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.8 (build 29)</title>
+      <pubDate>Sun, 12 Jul 2026 19:19:56 +0000</pubDate>
+      <sparkle:version>29</sparkle:version>
+      <sparkle:shortVersionString>1.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.8 (build 29)</h3>
+        <ul>
+          <li><b>Plan a whole season.</b> The Plan tab has a new <b>Season</b> section: name a date range at your site, set a nightly budget (or use your site's climate data), and Night Owl allocates your targets across the season's nights &mdash; ranked by how well each target fits each night, with the full score behind every choice. Targets that can't fit the budget are called out as <i>oversubscribed</i> with the exact shortfall, so you know to extend the season, raise the budget, or drop a lower priority. One click seeds tonight's plan from the season's assignments.</li>
+          <li><b>A simpler Sessions list.</b> The Sessions sidebar now shows one row per target instead of splitting each target across &ldquo;On Drive,&rdquo; &ldquo;Archived,&rdquo; and the other phase headings. A target with work in several phases appears once, with its total session count; open it and each session still shows its own phase and stage. No more seeing the same project listed twice.</li>
+          <li><b>Add a target to an existing mosaic.</b> You can now fold a target into a mosaic you already started &mdash; from a target card, a Tracker row, or the mosaic itself &mdash; instead of only being able to build a mosaic from scratch.</li>
+          <li>Reliability: expanded diagnostics behind the roof-safety monitor so a missed close can be traced precisely, plus internal test coverage confirming that same-labeled sessions from different nights never get merged.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.8-29.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="+UEnNmWw360pkwDcY0RymL9g1VuqRsVcIsNpLho082SHIGgdpVaE3/Tl/yIe7cjXVKxZE5DhI8whshNS8S6pBQ==" length="12173033" />
+    </item>
+    <item>
       <title>Version 1.8 (build 28)</title>
       <pubDate>Sun, 12 Jul 2026 01:01:44 +0000</pubDate>
       <sparkle:version>28</sparkle:version>
