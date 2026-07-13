@@ -6,6 +6,25 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.9 (build 30)</title>
+      <pubDate>Mon, 13 Jul 2026 03:10:48 +0000</pubDate>
+      <sparkle:version>30</sparkle:version>
+      <sparkle:shortVersionString>1.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.9 (build 30)</h3>
+        <ul>
+          <li><b>Auto-cull now catches soft-focus and trailed-star frames.</b> The analyzer already measured each frame's star sharpness and elongation but never acted on them — so frames ruined by focus drift, poor seeing, or tracking/wind error slipped past the cloud and satellite checks. It now flags them as a first-pass step right before you cull, so those defects are pre-marked when you open a session (you can still accept or override each). Runs on the verify Mac, where you review — the observatory Mac stages every frame untouched so nothing is dropped before you see it. Thresholds are tunable in Settings &#8594; Detection and per-session.</li>
+          <li><b>The Intelligence &ldquo;% kept&rdquo; is honest again.</b> Last night's imaging quality could read a misleading &ldquo;100% kept&rdquo; when it was actually measured before you'd culled. A night that wasn't really culled now stays &ldquo;cull pending&rdquo; until your real keep ratio lands, and any stale 100% already recorded is cleared on launch &mdash; so the calibration and learned model only ever train on your verified culls.</li>
+          <li><b>Tracker table keeps your mosaic groupings.</b> The table view listed every mosaic panel flat at the top level; it now groups panels under their project just like the grid, so an &ldquo;M8 Project&rdquo; stays together instead of scattering. The view-toggle and toolbar buttons also stop shifting when you switch between grid and table.</li>
+          <li><b>Tidier Google Drive staging.</b> After a session is downloaded, verified, and archived, its now-empty target folder is removed from Drive &mdash; and any empty folders left by earlier runs get swept up too. No more empty shells accumulating.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.9-30.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="JTrTDD4sOZZJUuK/dnhRyV+SWfzpdUKaFfRQKvCHIQcQit431nlDJ2x3Z3PX6MqaSHXNHbbKwP6voDG8m8BtDQ==" length="12193004" />
+    </item>
+    <item>
       <title>Version 1.8 (build 29)</title>
       <pubDate>Sun, 12 Jul 2026 19:19:56 +0000</pubDate>
       <sparkle:version>29</sparkle:version>
