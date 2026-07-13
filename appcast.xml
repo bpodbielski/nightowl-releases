@@ -6,6 +6,25 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 1.9 (build 31)</title>
+      <pubDate>Mon, 13 Jul 2026 18:45:48 +0000</pubDate>
+      <sparkle:version>31</sparkle:version>
+      <sparkle:shortVersionString>1.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 1.9 (build 31)</h3>
+        <ul>
+          <li><b>More accurate roof history in Intelligence.</b> A night whose roof never opened could occasionally be logged as &ldquo;opened&rdquo; when a stale roof-feed reading lingered past dawn. The night's roof outcome is now taken only from opens during true astronomical darkness, and cross-checked against the hour-by-hour roof record &mdash; so a closed night reads closed, and any earlier mislabelled night corrects itself on the next launch. Keeps the roof-open calibration honest.</li>
+          <li><b>Auto-cull can now flag soft-focus and trailed-star frames.</b> First pass at catching focus drift and tracking/wind smear &mdash; defects the cloud and satellite checks don't see. It runs on the verify Mac as a pre-cull step (the observatory Mac still stages every frame untouched), and is tunable in Settings &#8594; Detection.</li>
+          <li><b>Tracker table keeps mosaic groupings</b> (panels stay grouped under their project, matching the grid), and the grid/table toolbar buttons no longer shift when you switch views.</li>
+          <li><b>Small fixes:</b> the &ldquo;Nothing to Cull&rdquo; empty state sits at the top of the queue; the Intelligence &ldquo;% kept&rdquo; only reports a real, human-verified keep ratio (no more premature 100%).</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-1.9-31.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="M5fXbUzJCSk4d8mk0ktcGkdc4cuQYorcyI0PJRz7UTVczl8JCSvToYCop9BSjsBfrzuNqZ4mK0NVigScaEkWDQ==" length="12194446" />
+    </item>
+    <item>
       <title>Version 1.9 (build 30)</title>
       <pubDate>Mon, 13 Jul 2026 03:10:48 +0000</pubDate>
       <sparkle:version>30</sparkle:version>
