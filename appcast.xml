@@ -6,6 +6,25 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 2.0 (build 32)</title>
+      <pubDate>Tue, 14 Jul 2026 01:23:58 +0000</pubDate>
+      <sparkle:version>32</sparkle:version>
+      <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 2.0 &mdash; the Calendar</h3>
+        <ul>
+          <li><b>New: the Calendar rail &mdash; plan your whole year.</b> A rolling 12-month timeline that lays out which target or mosaic project owns which stretch of the year, aligned to each one's best season. <b>Auto-suggest</b> proposes a conflict-resolved layout &mdash; each target parked in its strongest window, over-commitment resolved against your clear-night budget &mdash; and you can drag any bar to re-tune it. Each month shows a <b>capacity meter</b> (how booked it is vs. your clear nights) and each target a <b>feasibility badge</b> (whether its window actually holds enough time to finish the goal). Whatever you earmark for the current month gets a gentle nudge up in tonight's and this season's plans, so your long-term strategy and your nightly scheduling stay in sync. Shared across both Macs.</li>
+          <li><b>Roof history self-corrects more reliably.</b> Building on the 1.9 fix: a night mislabelled &ldquo;opened&rdquo; by a stale roof-feed reading now corrects itself on the next launch even when its hour-by-hour record had already been saved &mdash; so a closed night reliably reads closed in Intelligence.</li>
+          <li><b>Season planner fixes.</b> A manual usable-nights budget is now honoured even when the site has a clear-night climatology; a season plan stays bound to the site it was created for (switching your active site no longer re-plans it against the wrong location); and an empty plan now explains <i>why</i> instead of showing a blank list.</li>
+          <li><b>Small touch:</b> in the target detail popup, the coordinates now sit under the &ldquo;Ideal Time of Year&rdquo; graphic.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-2.0-32.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="We31H67sCCQ6jHu5rRzVNu6yAC56dk/mXdG632z4Gst1MQak1EVp+fnlg2D6v2iSGtBqviplbDoxsoz2NWpdAA==" length="12421220" />
+    </item>
+    <item>
       <title>Version 1.9 (build 31)</title>
       <pubDate>Mon, 13 Jul 2026 18:45:48 +0000</pubDate>
       <sparkle:version>31</sparkle:version>
