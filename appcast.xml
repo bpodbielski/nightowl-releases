@@ -6,6 +6,25 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 2.0 (build 33)</title>
+      <pubDate>Tue, 14 Jul 2026 20:53:51 +0000</pubDate>
+      <sparkle:version>33</sparkle:version>
+      <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 2.0 (build 33) &mdash; Month Potential</h3>
+        <ul>
+          <li><b>New: see a month's real imaging potential.</b> Tap any month in the Calendar and choose <b>&ldquo;See month potential&rdquo;</b> to map how many <i>usable</i> hours a target can actually get that month &mdash; counting only the time it's high enough in your sky <i>and</i> the moon isn't washing it out, not just raw darkness. Estimates are <b>grounded in your own capture history</b>: once you've imaged a target a few times, its projected hours come from the rate <i>you</i> actually achieve rather than a guess &mdash; and every figure is shown as a range and labelled with its confidence. You also get the month's <b>best nights</b> to set up and a <b>burn-down forecast</b> of whether a goal will finish before the target drops out of season.</li>
+          <li><b>Calendar refinements.</b> A target can now hold <b>several capture windows across the year</b> (image M8 in summer <i>and</i> again next spring); <b>remove</b> a target from the calendar; turn on <b>Reorder</b> to drag your targets into any order; and <b>tap an open month</b> for in-season target ideas to fill it. Dragging and resizing the bars is smoother &mdash; the resize now tracks your pointer exactly &mdash; and the per-target hour and &ldquo;fits&rdquo; numbers, which implied a precision we couldn't stand behind, are gone (the new Month Potential view is the honest version).</li>
+          <li><b>Clearer sidebar.</b> The rail is renamed and reordered to end the two-&ldquo;Targets&rdquo; ambiguity: your target list is now <b>Catalog</b>, the interactive sky map is <b>Sky</b>, and the telescope <b>Scope</b> leads the rail.</li>
+          <li><b>Easier trail-model trainer setup.</b> Settings &#8594; Cloud can now <b>export a ready-to-use config</b> for the optional headless training helper &mdash; no more copying credentials by hand.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-2.0-33.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="poOl1YpcBMah00YjmIQbHbN+cCVOuafARsoyz+Rj+M36cP/Ajvd5unirVm9eTEZrL+ZZhTJEqr17trNItrHRAQ==" length="12629062" />
+    </item>
+    <item>
       <title>Version 2.0 (build 32)</title>
       <pubDate>Tue, 14 Jul 2026 01:23:58 +0000</pubDate>
       <sparkle:version>32</sparkle:version>
