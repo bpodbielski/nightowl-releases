@@ -6,6 +6,25 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 2.0 (build 35)</title>
+      <pubDate>Wed, 15 Jul 2026 15:48:55 +0000</pubDate>
+      <sparkle:version>35</sparkle:version>
+      <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 2.0 (build 35)</h3>
+        <ul>
+          <li><b>Your year plan now syncs across your Macs.</b> The Calendar's annual timeline shares a single record between machines, so a capture window you place &mdash; or remove &mdash; on one Mac now shows up on the other. (Each Mac was previously keeping its own copy that never converged.)</li>
+          <li><b>Month Potential now reads the weather.</b> The month view folds in the near-term cloud forecast (about the next two weeks): the <b>best nights</b> list re-ranks so a forecast-clear, moonless, high night rises to the top, each near-term night shows a <b>&ldquo;% clear&rdquo;</b> chip, and the header notes how many nights a real forecast covers. Nights beyond the forecast horizon fall back to your site's climatology, exactly as before &mdash; so the estimate stays honest either way.</li>
+          <li><b>The sidebar's sky glyph reads the live state.</b> Instead of a fixed label it now shows <b>Dark</b> / <b>Before dark</b> / <b>Daylight</b> at a glance, matching the observatory's Sky tile.</li>
+          <li><b>Under the hood.</b> A round of efficiency and correctness tune-ups to the Calendar and Month Potential compute paths.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-2.0-35.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="oMBh24QH94wGctxmj7cdorw/F5ctitl+SQ8J5DoMpuH3ZU1FA9G7daxVN9gnUNr4VULBoM3VD3qhb3+QpsmWAQ==" length="12654327" />
+    </item>
+    <item>
       <title>Version 2.0 (build 33)</title>
       <pubDate>Tue, 14 Jul 2026 20:53:51 +0000</pubDate>
       <sparkle:version>33</sparkle:version>
