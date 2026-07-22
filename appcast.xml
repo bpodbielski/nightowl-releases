@@ -6,6 +6,28 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 2.0 (build 37)</title>
+      <pubDate>Wed, 22 Jul 2026 22:17:46 +0000</pubDate>
+      <sparkle:version>37</sparkle:version>
+      <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 2.0 (build 37)</h3>
+        <ul>
+          <li><b>Tonight is the new home screen.</b> One surface that answers &ldquo;should I image tonight?&rdquo; &mdash; a plain-language verdict with the ranked reasons behind it, tonight's plan laid out as a time band, scope and roof status, and the conditions summary, in that order. It takes over from the old Intelligence panel.</li>
+          <li><b>Assistant updates.</b> A short feed of things worth knowing: a target tonight's plan will finish, one that's nearly done and isn't scheduled, a run of clouded-out nights, a nudge to arm before dusk. Each can be dismissed, and everything the feed has said is kept in a History list. Set an Anthropic API key in Settings &rarr; AI and the lines are rephrased more naturally &mdash; without one they read as written, with nothing lost.</li>
+          <li><b>A Workstation Mac now mirrors the observatory.</b> The forecast, plan and scope state it shows come from the observatory Mac rather than from its own idle hardware, and are marked stale when the published data ages.</li>
+          <li><b>A mosaic counts as one project.</b> A four-panel mosaic no longer reads as four completed targets &mdash; the Tracker, the catalog summary and the iOS notification now agree with each other.</li>
+          <li><b>Safer nights.</b> Destructive actions confirm before they run, Finish Culling is blocked when the archive drive is unreachable, and the normal dawn park-and-close no longer shows up as a fault.</li>
+          <li><b>Companion pairing is reliable.</b> A wider command-freshness window and an anti-App-Nap guard fix the pairing stall, and a wedged CloudKit call can no longer freeze the remote loop.</li>
+          <li><b>Accessibility and polish.</b> VoiceOver names across the parameter sliders and icon buttons, measured contrast fixes, a consistent type ramp throughout, and &#8984;1&ndash;&#8984;9 to jump between modes.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-2.0-37.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="PiiXRMwIVwovpltV5fM+plvICWEZ+WEyTn9YdGPJ0NhPbJcVbNOoo2Wx6qHNyFar8+8ld76koK3ILDqp4DrfBg==" length="13231608" />
+    </item>
+    <item>
       <title>Version 2.0 (build 35)</title>
       <pubDate>Wed, 15 Jul 2026 15:48:55 +0000</pubDate>
       <sparkle:version>35</sparkle:version>
