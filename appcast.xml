@@ -6,6 +6,28 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 2.0.1 (build 39)</title>
+      <pubDate>Mon, 27 Jul 2026 23:23:33 +0000</pubDate>
+      <sparkle:version>39</sparkle:version>
+      <sparkle:shortVersionString>2.0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 2.0.1 (build 39)</h3>
+        <ul>
+          <li><b>Mission Control answers &ldquo;is it working?&rdquo;</b> The Scope panel now opens with a mission header &mdash; target, frames against the night's estimate, elapsed time &mdash; over a stage track showing how far the mission has actually got and when each stage happened, and a narration lane of what the observatory did. Repeated standby lines collapse into one with a count, so the few entries that matter aren't buried under a poll that runs every twenty seconds. Stages are recorded by the observatory's own cycle rather than only while a window is open, so the track tells you what happened when you weren't watching. When the scope is idle the panel fills instead of sitting empty: a fault takes precedence, otherwise you get the arm checklist with all four preconditions and their state &mdash; not one at a time &mdash; or the reason an armed scope is standing by, in its own words.</li>
+          <li><b>The Catalog now says what each target needs.</b> Every target carries estimated nights remaining, its best months, how much the Moon matters to it and why, how the coming forecast suits it, when you last caught it, and a single recommendation line ordered by what actually changes a decision &mdash; a closing season outranks &ldquo;nearly complete&rdquo;. Where there's no honest answer the field stays quiet rather than showing something that reads like data: nights remaining is withheld under three nights of history, and a missing forecast reads as missing rather than as &ldquo;poor&rdquo;. Catalog rankings now come from the same scoring path the nightly plan schedules by, so the two can't disagree.</li>
+          <li><b>Hide targets across the whole Sky workspace.</b> A per-target show/hide that applies to the altitude timeline, the sky radar and the Atlas at once, so a full catalog stops crowding all three at the same time. What you've hidden survives a delete and re-add.</li>
+          <li><b>Auto-culling is now advisory by default.</b> The sky-quality analyzer was over-flagging &mdash; most of its calls were being overridden &mdash; so a quality or cloud flag no longer removes a frame on its own unless you enable auto-cull for that session. It still badges, filters and scores. Alongside it, review gains an explicit <b>V</b> = quality key beside <b>X</b> = trail and <b>C</b> = cloud, two new &ldquo;tagged&rdquo; filter chips, and training labels that come only from what you marked &mdash; the analyzer no longer votes on its own training data. Existing sessions keep their thresholds.</li>
+          <li><b>A glitched telescope file listing can no longer create a phantom session.</b> On 25 July a Seestar returned a listing of twelve entries, eleven of them the same file, while seventy-seven frames were really on the device &mdash; and the night imported as a one-frame session that finalized itself, with the real frames arriving hours later as a second session for the same night. A listing where more than half the entries collapse to duplicates is now treated as suspect: Night Owl rescans, and if it never settles it refuses to import rather than inventing a session. The folder is picked up again on the next pass.</li>
+          <li><b>Four of the Assistant's rules can finally speak.</b> A closing capture window, a plan swapped mid-night, first light ready to process, and catalog sync stalled were all implemented but had nothing feeding them. Each now has a producer &mdash; and &ldquo;plan swapped&rdquo; compares where two plans first diverge rather than their opening blocks, so a wholesale mid-night reshuffle gets reported and a block that already ran doesn't.</li>
+          <li><b>The iPad's Calendar month detail gets real numbers.</b> Allocated hours and best windows per target are now published to the companion, using the same moon-aware, history-blended Month Potential figures the Mac shows on its own sheet.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-2.0.1-39.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="0r58tYMLzU20uyGihDIo2dJ6EWfuBI5dat3psbQv+ED6jFVJaHFSv01Lh2Z80MeBXGUP2tpODXI9OJ2SiMAHAQ==" length="13669749" />
+    </item>
+    <item>
       <title>Version 2.0 (build 37)</title>
       <pubDate>Wed, 22 Jul 2026 22:17:46 +0000</pubDate>
       <sparkle:version>37</sparkle:version>
