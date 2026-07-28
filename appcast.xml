@@ -6,6 +6,24 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 2.0.2 (build 40)</title>
+      <pubDate>Tue, 28 Jul 2026 23:06:18 +0000</pubDate>
+      <sparkle:version>40</sparkle:version>
+      <sparkle:shortVersionString>2.0.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 2.0.2 (build 40)</h3>
+        <ul>
+          <li><b>Fixes a crash when you open a menu.</b> On macOS 26, Night Owl could quit the instant you clicked into the menu bar &mdash; most often in the first few seconds after launch. The View menu&rsquo;s &ldquo;Go to&rdquo; entries were being added and removed as the window took and lost focus, and macOS 26 will not tolerate a menu changing shape while it is open. Those entries are now fixed in place and simply gray out when a mode isn&rsquo;t offered on this Mac.</li>
+          <li><b>&#8984;1&ndash;&#8984;8 now mean the same thing on every Mac.</b> A number always points at the same mode, whether or not this Mac&rsquo;s rail shows it. On a Workstation, which hides Tonight and Plan, the numbers therefore shift &mdash; Catalog is now &#8984;3 rather than &#8984;1 &mdash; and the two hidden modes appear in the menu grayed out. If you use both an observatory Mac and a workstation, a shortcut no longer does two different things depending on where you are.</li>
+        </ul>
+        <p>This is a targeted fix on top of 2.0.1: nothing else changed.</p>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-2.0.2-40.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="/yTg/2nF4giGMtQctE+0o6yNmNBunkyfd4/8j/1jZtCQvjUAK6pwVc+7YCGSp9xJN9EXmo/hTMpV9qxnm1BZBg==" length="13670478" />
+    </item>
+    <item>
       <title>Version 2.0.1 (build 39)</title>
       <pubDate>Mon, 27 Jul 2026 23:23:33 +0000</pubDate>
       <sparkle:version>39</sparkle:version>
