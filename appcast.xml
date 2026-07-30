@@ -6,6 +6,33 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 2.0.3 (build 41)</title>
+      <pubDate>Thu, 30 Jul 2026 20:11:07 +0000</pubDate>
+      <sparkle:version>41</sparkle:version>
+      <sparkle:shortVersionString>2.0.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 2.0.3 (build 41)</h3>
+        <p>The largest release since 2.0: every panel has been through the redesign, alongside a documented roof source, a storage audit, and a set of fixes for nights that were quietly being lost.</p>
+        <ul>
+          <li><b>The whole app has been redesigned.</b> Each panel now speaks one visual language suited to its job &mdash; operational for Tonight and the Observatory, analytical for Intelligence and Sky, a library dialect for Catalog and Calendar &mdash; over a shared component set, one type ramp, and verbs that mean the same thing everywhere. <b>&#8984;F</b> is Find in every panel that has a list, and <b>Finish Culling</b> is <b>&#8984;&#9166;</b> on every surface that offers it.</li>
+          <li><b>Culling can be undone.</b> <b>&#8984;Z</b> now reverses every cull mutation, including the bulk ones.</li>
+          <li><b>Sessions is one workspace instead of two lists.</b> The flat &ldquo;needs a human&rdquo; queue and the target-grouped tracker were two views of a single set of facts, each with its own selection and ordering &mdash; and they could disagree about which session a menu command would act on. They're now one workspace with a single state. Along with it: a review toolbar and status bar that stay put, a Current Review inspector, and a loupe rebuilt as the grid at 1:1 &mdash; the same metadata rail and the same verbs as the grid, full-bleed against near-black so your eye adapts to the frame's own range rather than the app's panel grey.</li>
+          <li><b>Intelligence: one verdict ladder, and a table that grades it.</b> Tonight's verdict and the Intelligence panel were using two different band ladders, so the same score of 82 read &ldquo;Excellent&rdquo; in one place and &ldquo;Good&rdquo; in the other &mdash; which let the panel grade a promise the verdict never made. There's one five-band ladder now, and completed nights are grouped by the band their prediction fell in, with what that band promised set beside what it actually delivered. The disagreement views &mdash; the confusion cells, the override histogram, the per-night and per-model trends &mdash; are folded from one population, so they can't contradict each other either.</li>
+          <li><b>Catalog and Calendar become real tables.</b> A proper multi-column sort, a column chooser, a detail inspector, and cells that stay blank rather than inventing a value where there isn't one.</li>
+          <li><b>Your year plan stops sliding forward.</b> Annual campaigns stored their placement as an offset from &ldquo;the current month&rdquo; without ever recording which month that was &mdash; so a plan saved in July for July&ndash;August read as August&ndash;September on 1 August with nobody having touched it, and slid again at every rollover. Because targets are placed by season, a summer target was being pushed into autumn by the app's own definition, and the estimated completion published to the iPad moved with it. Campaigns now carry absolute months.</li>
+          <li><b>A documented roof source.</b> An ASCOM Alpaca safety monitor can now serve the roof chain, which gives the <i>unsafe</i> state its first real producer. An unsafe verdict parks the scope, and the logs and the Settings &ldquo;serving source&rdquo; line now say <i>unsafe</i> rather than reporting a safety verdict as though it were a roof position. If the monitor is unreachable it falls back to the existing endpoint rather than going dark.</li>
+          <li><b>See what's in the PreProcessing backlog.</b> Settings &rarr; Advanced &rarr; Storage &rarr; <b>Audit Pre-Processing Storage</b> reports what's sitting in the working directory and why each frame is still there. It's read-only and never deletes anything. Worth knowing: rejected frames are retained <i>deliberately</i> &mdash; they're the only full-resolution copies in existence once the originals are cleared from the telescope, and they're the source material the trail model is retrained from. The report says so, so nobody reads the number as junk to sweep.</li>
+          <li><b>Nights that were being lost quietly.</b> A dead network share could permanently deadlock every background task in the app &mdash; measured with 24 concurrent stalls, all eight pool threads parked and the process never recovered, including the rescue path meant to break the stall. The dawn harvest was also one-shot: if the share was missing at dawn, that was the night, with nothing arranging a retry. It now retries, can remount the share itself (opt-in, in Observatory settings), and an unmounted capture share is called out at <i>dusk</i> rather than discovered the next morning. Engine discovery no longer silently drops output either.</li>
+          <li><b>The pipeline strip stops misreporting.</b> &ldquo;On Seestar&rdquo; was counting frames this Mac had already harvested, sending you to check a telescope with nothing on it. And sessions parked at &ldquo;On Drive&rdquo; for weeks were never stuck &mdash; only a Workstation can clear Drive staging, by design, so on an Observatory Mac the strip now says the hop is parked instead of implying something is moving.</li>
+          <li><b>One planning floor.</b> Planning was choosing windows down to 30&deg; while the sequencer enforced 20&deg;, so a night could keep imaging ten degrees below the floor its own plan had been built against. Both are 20&deg; now &mdash; which also means a target that never climbs above 30&deg; can be scheduled at all.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-2.0.3-41.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="dgKT1iVAQRdRS3QfwdYTUwOYZcAuizbjRcOUOLm6KHJIbklW0lgf+zKbWqhRvaeLbjLJvOWE2w3Wcc+g5MPGDQ==" length="14894104" />
+    </item>
+    <item>
       <title>Version 2.0.2 (build 40)</title>
       <pubDate>Tue, 28 Jul 2026 23:06:18 +0000</pubDate>
       <sparkle:version>40</sparkle:version>
