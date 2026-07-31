@@ -6,6 +6,23 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 2.0.5 (build 43)</title>
+      <pubDate>Fri, 31 Jul 2026 18:24:56 +0000</pubDate>
+      <sparkle:version>43</sparkle:version>
+      <sparkle:shortVersionString>2.0.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 2.0.5 (build 43)</h3>
+        <ul>
+          <li><b>Fixes the menu-bar crash on macOS 26 &mdash; properly this time.</b> 2.0.3 still crashed with the same signature the earlier fix was meant to close: clicking into the menu bar could quit the app outright. The previous attempt froze the number of &ldquo;Go to&rdquo; entries but kept building them from a loop, and a loop rebuilds its whole list whenever the underlying data changes &mdash; not only when the count does. Because those entries track which modes this Mac offers, and that value flips on exactly the window-focus change a menu-bar click causes, every click was still handing macOS a fresh set of items. The eight entries are now written out literally, so their enabled state is set in place with nothing inserted. A test asserts the list stays exactly eight, so adding a ninth mode fails the build rather than silently losing its shortcut.</li>
+          <li><b>The storage audit stops calling a dead staging &ldquo;normal&rdquo;.</b> An item stuck at &ldquo;On Drive&rdquo; that can never be downloaded &mdash; its manifest lists no frames &mdash; was being reported as &ldquo;Waiting for the Workstation &mdash; Normal&rdquo;. Nothing is coming for it, and nothing in the app will ever clear it. The audit now reports these separately as stuck, and prints the Drive path so you can delete it by hand. Still read-only: nothing has verified that staging's frames anywhere, so the app won't remove it on its own say-so.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-2.0.5-43.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="7syD2YzcAkd4Mlt3/JUENciErnYWTx/YUUMWXCQQRVcKlDEJL3aTcNjrGGazJ+g4UJBHyLNLypysmuwz8EWXBg==" length="14950566" />
+    </item>
+    <item>
       <title>Version 2.0.4 (build 42)</title>
       <pubDate>Fri, 31 Jul 2026 14:49:03 +0000</pubDate>
       <sparkle:version>42</sparkle:version>
