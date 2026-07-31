@@ -6,6 +6,29 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 2.0.4 (build 42)</title>
+      <pubDate>Fri, 31 Jul 2026 14:49:03 +0000</pubDate>
+      <sparkle:version>42</sparkle:version>
+      <sparkle:shortVersionString>2.0.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 2.0.4 (build 42)</h3>
+        <p>A pipeline-honesty release. Every item below came out of something the strip was reporting that wasn't true &mdash; and in three cases the app was quietly losing or stranding data behind the wrong number.</p>
+        <ul>
+          <li><b>&ldquo;9 On Drive&rdquo; when there was nothing on Drive.</b> That count never came from Drive &mdash; it came from records a periodic scan updates, sitting next to a &ldquo;synced&rdquo; timestamp that was always fresh, so days-old numbers looked minutes old. Worse, a scan that <i>failed</i> was indistinguishable from one that found nothing: a transient read error on a session's manifest made it look absent, and absent was read as &ldquo;already archived&rdquo; &mdash; so a live staging could be stamped Archived and dropped from view. A failed scan is now treated as a failure, not as an empty result.</li>
+          <li><b>Two Macs no longer disagree about the pipeline for hours.</b> The periodic refresh was wired inside the Observatory's branch of the remote loop, so a Workstation or standalone Mac read the counts once when the window first opened and then never again &mdash; leaving them frozen at launch-time values. The Workstation is the node that <i>archives</i>, so the one Mac whose own actions move these numbers was the one never re-reading them.</li>
+          <li><b>A night that had already uploaded stopped reporting &ldquo;Awaiting upload: 1&rdquo;.</b> One keeper's local-deletion flag was stale, so the session never counted as finished &mdash; and every 30 minutes the self-heal re-staged all 135 keepers against a staging folder that archiving had already trashed. Each one then failed on a local file that had been correctly reclaimed after its own successful upload, and the failures overwrote the successful upload state, putting the night back on the strip. It had been stuck like that for two days. A finalized night is now settled from what's actually on Drive rather than re-staged.</li>
+          <li><b>Archived nights no longer strand their staging folder on Drive.</b> Trashing the staging after a successful archive was fire-and-forget: if it threw, everything else was already stamped complete and the folder stayed &mdash; full-resolution FITS, invisible in every surface of the app, costing real quota indefinitely. It now retries with backoff and, if it still can't, fails loudly naming the session and where to find it. Orphans it left behind previously are counted and reported.</li>
+          <li><b>An empty staging no longer retries forever.</b> Opening Sessions could raise &ldquo;No FITS files found in NightOwl-Import-&hellip;&rdquo; &mdash; an error naming a throwaway temp folder, about a session it never named. A staging with no frames in it could never have imported, yet was re-offered on every check. Those are now excluded by name and reported as what they are.</li>
+          <li><b>813 stranded previews cleaned off the telescope.</b> Previews were only ever deleted alongside the exact frame they belonged to, so any preview whose frame was culled or skipped stayed on the eMMC forever &mdash; a steady leak of about a megabyte per sub on a device with no cleanup of its own. Once a subframe folder holds no frames, it's now removed whole, previews included. (Applies when &ldquo;delete source after download&rdquo; is on.)</li>
+          <li><b>The inspector stops wrapping one letter per line.</b> In a narrow rail the value column was being squeezed to about 20 points, rendering &ldquo;Automatic&rdquo; down the screen a character or two at a time. Values are now measured first and the key column shrinks with them.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-2.0.4-42.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="ReF+Lnuuq2ZlmOjxsRdC6viYuXS0QonQV4A35OB6L701XncbzC+Dr5AqyTWMQYgrLDClgT2pfX4aBkhpPAw0DQ==" length="14948346" />
+    </item>
+    <item>
       <title>Version 2.0.3 (build 41)</title>
       <pubDate>Thu, 30 Jul 2026 20:11:07 +0000</pubDate>
       <sparkle:version>41</sparkle:version>
