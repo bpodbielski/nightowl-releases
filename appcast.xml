@@ -6,6 +6,33 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 2.0.6 (build 44)</title>
+      <pubDate>Tue, 04 Aug 2026 01:48:08 +0000</pubDate>
+      <sparkle:version>44</sparkle:version>
+      <sparkle:shortVersionString>2.0.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 2.0.6 (build 44)</h3>
+        <p><b>This release requires macOS 14.4</b> (previous releases needed 14.0).</p>
+        <p>A refinement pass over the screens the redesign shipped, plus three fixes for nights the telescope could strand on its own storage.</p>
+        <ul>
+          <li><b>Frames can no longer be trapped on the telescope by a folder that got too big.</b> The Seestar's file server can't list a folder past roughly 2,000 entries &mdash; it serves the first batch, then loops a window of them until the client gives up. The listing that comes back is both mostly duplicates and silently incomplete: on 3 August a folder holding 1,091 frames showed only 672, and no amount of rescanning would ever have fixed it, because the fault scales with the folder rather than being a glitch. Two changes: the harvest now shrinks folders before they reach the limit, and a folder already over it is imported by asking for each file by name rather than trusting the listing at all. Deleting files does <i>not</i> repair a folder that has already crossed the line &mdash; the device keeps the dead slots &mdash; so the recovery path is the one that matters.</li>
+          <li><b>A harvest that partly fails no longer strands the frames it missed.</b> When one folder imported and another failed in the same pass, the &ldquo;resume from&rdquo; marker moved forward past the failed folder's earlier frames. The next harvest would pick that folder up again but skip everything before the new marker &mdash; those frames were never imported, never cleaned off the telescope, and never reclaimed. Each folder now carries its own marker, so a failure can only ever hold back its own frames.</li>
+          <li><b>Light-pollution filter frames are recognised.</b> The first real LP capture confirmed what the telescope actually writes in the file header, so LP sessions now classify as dual-band instead of unknown. Targets stored before this are upgraded the next time they're assigned. Any filter token still not recognised is now named in the log rather than passed over silently.</li>
+          <li><b>Tonight finally answers its own question.</b> The screen showed five true things and left you to fuse them by eye, and it never said <i>when</i> dark starts &mdash; a mediocre night gave no time at all, because the line it used names the best-quality window and stays empty when nothing clears the bar. There's now a summary line giving the window and how long until it opens, flipping to how long is left once it has, and it either states both or says nothing.</li>
+          <li><b>The Observatory says when the waiting ends.</b> &ldquo;Armed &mdash; waiting&rdquo; and &ldquo;not dark yet&rdquo; never said when that stops being true. The next transition now sits beside the state that's waiting for it, as a duration rather than a clock time, since the question behind a wait is how long. Omitted where there's no location, and under polar day or night, rather than inventing a time.</li>
+          <li><b>Suggestions are reviewed before they apply.</b> On both Plan and Calendar, &ldquo;suggest&rdquo; and &ldquo;apply&rdquo; were a single click &mdash; a computed plan overwrote yours immediately, behind a confirmation that described what you'd lose only in the abstract without naming which targets. Proposals now have a real middle state you can look at and accept or reject, shared by both screens so the same word can't mean different things in each.</li>
+          <li><b>Plan blocks say why they're there.</b> A block carried its target name and let its position imply a rationale the app never stated. Each now shows duration, peak altitude and when it peaks, plus whether it clears the plan's altitude floor for its whole window, only part of it, or not at all &mdash; a bar drawn full width while only part of it clears was exactly the kind of overclaim worth removing.</li>
+          <li><b>The sidebar stops changing its own vocabulary.</b> Only three of eight status glyphs existed at any moment, and every glyph whose colour changed also changed its symbol. It's now a fixed grid of always-visible cells where only the tint moves. Sky charts also pick what to emphasise once per pass instead of drawing forty targets at near-full strength, and &ldquo;Newest arrivals&rdquo; rows are distinguishable from each other again &mdash; five nights on one target used to render as five identical rows.</li>
+          <li><b>Catalog honesty and speed.</b> Projects get their own row and read as containers; the column chooser works and section headers no longer claim rows they don't hold. Alongside it, a round of redraw work in Catalog, Sky and Intelligence &mdash; aggregations hoisted out of draw loops, the sky map re-centering correctly, and a dead code path removed.</li>
+          <li><b>Smaller things.</b> Copy that still named the old brand now reads the Drive folder setting; the AI settings tab tells the truth about whether a key is set; force-reanalyze goes through undo like every other cull action; selection blue and warning amber mean one thing each again; and the timeline duration label meets the 10pt minimum type size.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-2.0.6-44.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="NubXFgdWvju2yLYK+8kS3WODW9S51lDzTMsLs6lHHctJRJk+n01Upew+xLmtbd5h/IW7KHaWKSk88Y9j9RqrBw==" length="15182210" />
+    </item>
+    <item>
       <title>Version 2.0.5 (build 43)</title>
       <pubDate>Fri, 31 Jul 2026 18:24:56 +0000</pubDate>
       <sparkle:version>43</sparkle:version>
