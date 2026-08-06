@@ -6,6 +6,28 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 2.0.7 (build 45)</title>
+      <pubDate>Thu, 06 Aug 2026 16:28:08 +0000</pubDate>
+      <sparkle:version>45</sparkle:version>
+      <sparkle:shortVersionString>2.0.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 2.0.7 (build 45)</h3>
+        <ul>
+          <li><b>New, optional: talk to the telescope's share directly instead of through a mounted volume.</b> The capture share's lifecycle belongs to macOS, not to Night Owl &mdash; logging out unmounts it, and the Seestar powering down mid-day kills it, with nothing putting it back. Two nights this fortnight harvested zero frames for exactly that reason. Night Owl can now speak SMB straight to the scope from inside the app, with no mount involved. It's a single switch, <b>off by default</b>: with it off, everything behaves byte-for-byte as before &mdash; same bookmark, same volume walk, same remount supervision. With it on, only the <i>source</i> side changes; session folders, verified writes, detection and previews still go through the file system exactly as they did.</li>
+          <li><b>&ldquo;On Drive&rdquo; now says whose job it is.</b> The pipeline strip's four-word labels are the app's shortest description of its longest process, and two of them don't survive being read literally &mdash; &ldquo;On Seestar&rdquo; also counts nights already pulled onto this Mac, and &ldquo;On Drive&rdquo; names a place when what you actually need to know is who acts next. That answer depends on whether you're at the observatory or the workstation, so no four-word label could carry it. Each stage now explains itself on hover, per role, and always states that the count comes from records rather than from Drive itself.</li>
+          <li><b>Intelligence stops crediting you for frames nobody opened.</b> Both agreement cells of the confusion matrix read &ldquo;you agreed&rdquo; while counting frames no human ever reviewed &mdash; naming you as the actor for decisions you never made. The reviewed and unreviewed split was already in the data and is now in the labels.</li>
+          <li><b>Conditions says how much of itself to believe.</b> Two of the four live sources feeding the panel couldn't report their own health: a failing feed silently kept showing its last value, and with no timestamps a three-hour-old reading rendered identically to a three-second-old one. &ldquo;Never fetched&rdquo;, &ldquo;turned off&rdquo; and &ldquo;nothing to report&rdquo; all looked the same. Each source now carries its own freshness and failure state.</li>
+          <li><b>Settings explains itself.</b> The four quiet switches now say what they actually do, settings that are locked say they're locked and why, long explanations collapse out of the way &mdash; and warnings never collapse. The Calendar legend is readable and a gap in the year now says how big it is; reopening a finished session asks first, and a locked cull says so rather than failing quietly.</li>
+          <li><b>The iPad gets per-target observing seasons.</b> Published as one record mirroring the annual timeline. Worth noting the altitude floor in it is 20&deg;, matching what the app actually schedules against &mdash; earlier handoff documents said 30&deg; in three places and were wrong.</li>
+          <li><b>Under the hood.</b> The test suite stopped leaking a preferences file per run into your Library folder.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-2.0.7-45.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="Jpul8SYIql8BpjOhegQlUCXMoScrY95WuerP4m9LLmj+26y3W0IhusO0WMQwZs+Z0u23bdOCMGHhLhG3H1SzBA==" length="15880117" />
+    </item>
+    <item>
       <title>Version 2.0.6 (build 44)</title>
       <pubDate>Tue, 04 Aug 2026 01:48:08 +0000</pubDate>
       <sparkle:version>44</sparkle:version>
