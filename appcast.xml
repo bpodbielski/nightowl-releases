@@ -6,6 +6,35 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 2.0.8 (build 46)</title>
+      <pubDate>Fri, 07 Aug 2026 13:24:14 +0000</pubDate>
+      <sparkle:version>46</sparkle:version>
+      <sparkle:shortVersionString>2.0.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 2.0.8 (build 46)</h3>
+        <p>If you're coming from 2.0.6, this also carries everything in 2.0.7 &mdash; that release never reached the update feed, so its changes are listed at the bottom.</p>
+        <ul>
+          <li><b>A big night no longer freezes the app at launch.</b> A 1,224-frame night left both builds beachballed for about thirteen minutes before the first window even drew &mdash; and relaunching didn't help, because the same work ran again. The transfer was doing a file check and a delete against the telescope's share for every single frame on the main thread, plus another check per already-copied frame on the resume path. A sample showed the main thread spending 59% of its time in one call and 26% in another. That work now runs off the main thread, so the window draws immediately and the night keeps progressing behind it.</li>
+          <li><b>The &ldquo;no session was created&rdquo; alert is withdrawn when recovery succeeds.</b> When a folder too large for the telescope to list is recovered by asking for each file by name, the first attempt still fails &mdash; and its alert stayed on screen claiming a loss that hadn't happened. It's now cleared when recovery works, and pinned to that specific failure so an unrelated warning that's still true stays put. (First live run: 1,224 frames imported unattended.)</li>
+          <li><b>Directory removal is verified instead of assumed.</b> Deleting a folder over the direct SMB path could report success while the folder and its contents survived &mdash; the protocol gives the client no way to report that particular failure, so it can't be detected by reading the response. Removal is now confirmed by checking the folder is actually gone. No data was ever at risk; the telescope refuses to delete a non-empty folder either way.</li>
+          <li><b>The direct SMB transport can now actually connect.</b> Several things were wrong at once. The app was handing the SMB client a Bonjour service name rather than an address, so every attempt failed to resolve before reaching the network &mdash; it now dials the address it already has. Underneath that, the login was being refused: the telescope accepts an anonymous session, but the client library had no way to ask for one. That's fixed via a pinned fork. The transport remains <b>off by default</b>.</li>
+          <li><b>The test suite stopped touching the live observatory.</b> Running tests launched enough of the app that it would learn the boot disk as the capture share's source and then ask the system to remount the real share from inside a test process.</li>
+        </ul>
+        <h4>Also included, from 2.0.7</h4>
+        <ul>
+          <li><b>Optional: talk to the telescope's share directly instead of through a mounted volume.</b> Logging out unmounts the share and the scope powering down mid-day kills it, with nothing restoring it &mdash; two nights harvested zero frames for exactly that. One switch, off by default; with it off, behaviour is identical to before.</li>
+          <li><b>&ldquo;On Drive&rdquo; says whose job it is</b> &mdash; the pipeline stages now explain themselves on hover, per role, since no four-word label could carry who acts next.</li>
+          <li><b>Intelligence stops crediting you for frames nobody opened.</b> Both agreement cells said &ldquo;you agreed&rdquo; while counting frames no human ever reviewed.</li>
+          <li><b>Conditions says how much of itself to believe.</b> A failing feed silently kept showing its last value, and with no timestamps a three-hour-old reading looked identical to a fresh one.</li>
+          <li><b>Settings explains itself</b> &mdash; the quiet switches say what they do, locked settings say why, long explanations collapse and warnings never do. Plus a readable Calendar legend, confirmed session reopening, and per-target observing seasons published to the iPad.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-2.0.8-46.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="b0kS3+n/1/NshOK70LBLT4lecZMDy62UIwzhFUUvIfqpGkMnD9ZEvUz9DAxT/l3HpTlIDlrm+nRsRDX6YzEdCw==" length="15904026" />
+    </item>
+    <item>
       <title>Version 2.0.7 (build 45)</title>
       <pubDate>Thu, 06 Aug 2026 16:28:08 +0000</pubDate>
       <sparkle:version>45</sparkle:version>
