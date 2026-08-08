@@ -6,6 +6,26 @@
     <description>Automatic update feed for Night Owl.</description>
     <language>en</language>
     <item>
+      <title>Version 2.0.9 (build 47)</title>
+      <pubDate>Sat, 08 Aug 2026 02:12:50 +0000</pubDate>
+      <sparkle:version>47</sparkle:version>
+      <sparkle:shortVersionString>2.0.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>Night Owl 2.0.9 (build 47)</h3>
+        <ul>
+          <li><b>The trail model now ships inside the app.</b> No previous build ever bundled it. Detection worked here only because an automatic download had installed a copy into Application Support &mdash; on a fresh install, on a second Mac, or with automatic model updates turned off, there was nothing to fall back to and the app quietly ran the older geometric detector instead, saying nothing about it. That difference is not small: the model catches roughly <b>75%</b> of satellite trails against about <b>42%</b> for the fallback. The model is now in the app itself, and the interface says which detector is actually running.</li>
+          <li><b>The roof gate stops coasting once nothing is watching it.</b> Turning the roof monitor off after an &ldquo;opening&rdquo; notice left the last reading in place and permission to operate granted indefinitely, with nothing still running that could ever hear the close &mdash; on a machine that slews unattended. Stopping the monitor, or losing the feed, now resets the roof to unknown rather than leaving a stale verdict standing.</li>
+          <li><b>Direct SMB mode no longer re-imports a whole folder every pass.</b> The per-folder cutoff that decides &ldquo;what's new since last time&rdquo; was silently doing nothing over SMB: it read a timestamp that only exists on local files, got nothing, and fell through. Since the telescope appends each night's frames into the same folder, every harvest would have re-imported and re-uploaded the entire target. The listing already carried the timestamps &mdash; they were being discarded. (Only affects the optional direct-SMB transport, which is off by default.)</li>
+          <li><b>The storage audit no longer freezes the app.</b> Pressing it walked thousands of session directories on the main thread &mdash; twice, plus a file read each &mdash; so the window locked until it finished, and the &ldquo;Auditing&hellip;&rdquo; label never even drew because the work completed before the app could paint it. It now runs off the main thread like the button twenty lines below it always did.</li>
+          <li><b>Under the hood.</b> Every place the app writes to iCloud now names the record type it's writing in the log, so a sync problem can be traced to a specific record instead of inferred from an absence of errors.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://bpodbielski.github.io/nightowl-releases/NightOwl-2.0.9-47.zip"
+                 type="application/octet-stream"
+                 sparkle:edSignature="2ErYNMKNF/4gx8kuiOLH3R5pxwRFpuUsGaQ7HhX4/wLLcWUKOirx+xNK3jDc6XggSnSxxoR3cpUJlT3ZnziOAg==" length="15927198" />
+    </item>
+    <item>
       <title>Version 2.0.8 (build 46)</title>
       <pubDate>Fri, 07 Aug 2026 13:24:14 +0000</pubDate>
       <sparkle:version>46</sparkle:version>
