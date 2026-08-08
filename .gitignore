@@ -1,1 +1,6 @@
 .DS_Store
+
+# Debug symbols kept for symbolicating crash reports from shipped builds.
+# ~158 MB per build, and this repo is PUBLIC and served by GitHub Pages — they are
+# staged locally by Scripts/release.sh and deliberately never published.
+dSYMs/
